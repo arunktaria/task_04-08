@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="16sp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:id="@+id/retrofit_title"
+        android:text="hello world"
+
+        android:ellipsize="end"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:id="@+id/retrofit_body"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:text="hello world"
+        android:fontFamily="sans-serif-light"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/retrofit_id"
+        android:text="id"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"/>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="10sp"
+    android:src="@drawable/lineforrecyclerview"
+    />
+</LinearLayout>

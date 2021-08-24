@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seconFrag"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/linear_signup"
+        android:padding="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/userimgupload"
+            android:layout_gravity="center"
+            android:src="@drawable/person"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:drawableStart="@drawable/usernameimg"
+            android:drawablePadding="10sp"
+            android:id="@+id/usernamesign"
+            />
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+            android:layout_marginTop="16sp"
+        android:drawableStart="@drawable/emailimg"
+        android:drawablePadding="10sp"
+        android:id="@+id/emailsign"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="16sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordsign"
+        android:hint="password"
+        android:drawableStart="@drawable/lockimg"
+        android:drawablePadding="10sp"
+        />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="16sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cpasswordsign"
+            android:hint="password"
+            android:drawableStart="@drawable/lockimg"
+            android:drawablePadding="10sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_textview"
+            android:textSize="25sp"
+           android:hint="select date"
+            android:layout_marginTop="16sp"
+            android:text=""
+
+            android:drawableStart="@drawable/calendorimg"
+            android:fontFamily="sans-serif-light"
+            />
+        <ImageButton
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:id="@+id/captureimg"
+            android:layout_marginTop="16sp"
+            android:src="@drawable/cameraimg"
+            android:background="@color/white"
+            />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:text="Register"
+        android:id="@+id/signupbtn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/termcon"
+        android:text="view term  conditions"
+        android:fontFamily="sans-serif-light"
+        android:textSize="15sp"
+        />
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>

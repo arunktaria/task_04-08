@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".firstFrag">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linear_login"
+        android:padding="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/userimglog"
+            android:layout_gravity="center"
+            android:src="@drawable/person"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:drawableStart="@drawable/emailimg"
+            android:drawablePadding="10sp"
+            android:id="@+id/emailedit"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="16sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+              android:hint="password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/lockimg"
+            android:drawablePadding="10sp"
+            />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:background="@drawable/btn_background"
+            android:text="login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/termcon"
+            android:text="view term  conditions"
+           android:fontFamily="sans-serif-light"
+            android:textSize="15sp"
+            />
+
+
+    </LinearLayout>
+   </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:title="user" android:id="@+id/userloginmenuitem" app:showAsAction="always" android:icon="@drawable/personwhite" />
+<item android:title="menuuser" android:id="@+id/menuuser_name" app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp"
+    android:orientation="vertical">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+       <ImageView
+           android:id="@+id/userimgrecycler"
+           android:layout_width="70sp"
+           android:layout_height="70sp"
+
+           android:background="@drawable/roundimgbackground"
+           android:padding="15sp"
+          android:scaleType="fitXY"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+
+       <TextView
+           android:id="@+id/usernametext_clayout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="4dp"
+           android:layout_weight="1"
+           android:fontFamily="sans-serif-light"
+           android:text="title"
+           android:textSize="25sp"
+           app:layout_constraintBottom_toTopOf="@+id/useremail_clayout"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.085"
+           app:layout_constraintStart_toEndOf="@+id/userimgrecycler" />
+
+       <TextView
+           android:id="@+id/loginstatus"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right"
+           android:layout_weight="0.1"
+           android:gravity="right"
+           android:text="online"
+           android:textColor="#0CEA15"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toEndOf="@+id/usernametext_clayout"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.039" />
+
+       <TextView
+           android:id="@+id/useremail_clayout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="40dp"
+           android:fontFamily="sans-serif-light"
+           android:text="hello"
+           android:textSize="20sp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.086"
+           app:layout_constraintStart_toEndOf="@+id/userimgrecycler"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <TextView
+           android:id="@+id/date_listitem"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:fontFamily="sans-serif-light"
+           android:text="no data available"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toStartOf="@+id/deleteitembtn"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toEndOf="@+id/useremail_clayout"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.921" />
+
+       <ImageButton
+           android:id="@+id/deleteitembtn"
+           android:layout_width="40sp"
+           android:layout_height="40sp"
+           android:background="@color/white"
+           android:src="@drawable/deleteimg"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="1.0"
+           app:layout_constraintStart_toEndOf="@+id/useremail_clayout"
+           app:layout_constraintTop_toBottomOf="@+id/loginstatus" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:layout_marginLeft="90sp"
+        android:background="@drawable/lineforrecyclerview"/>
+
+   </LinearLayout>
+
+
+
+
+
+
+
+
+
